@@ -33,3 +33,19 @@ dark-2 {
 .cart {
   color: #000000;
 }
+
+/* Responsive part */
+@media screen and (max-width: 576px) {
+  .nav-links a {
+    display: none;
+  }
+  .nav-links a.cart {
+    display: inline-block;
+    margin-top: 11px;
+    margin-right: 10px;
+  }
+  .nav-logo {
+    margin-left: 10px;
+  }
+  /* header */
+}
