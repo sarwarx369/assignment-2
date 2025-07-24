@@ -13,9 +13,12 @@ body {
 }
 .dark-2 {
   color: #8987a1;
-  .dark-3 {
-    color: rgba(0, 0, 0, 0.5);
-  }
+}
+.dark-3 {
+  color: rgba(0, 0, 0, 0.5);
+}
+.center {
+  text-align: center;
 }
 
 /* navbar */
@@ -68,7 +71,54 @@ body {
   color: rgba(0, 0, 0, 0.5);
   font-size: 1.2rem;
 }
+/* plant section */
 
+.plant-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000000;
+}
+.plant-descri {
+  font-size: 1.2rem;
+  margin-top: 16px;
+}
+.plant-tsp {
+  color: #e95a08;
+}
+.plant-cards {
+  max-width: 950px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+.plant-card {
+  width: 100%;
+}
+.plant-card img {
+  width: 100%;
+  display: block;
+}
+.pcard-h {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.pcard-sh {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.pcard-btn {
+  width: 100%;
+  color: white;
+  background-color: #e95a08;
+  font-size: 0.8rem;
+  font-weight: 530;
+  margin-top: 15px;
+  border: none;
+  height: 35px;
+}
 /* Responsive part */
 @media screen and (max-width: 576px) {
   .nav-links a {
@@ -114,5 +164,16 @@ body {
     height: auto;
     object-fit: contain;
     display: block;
+  }
+  /* plant section */
+  .plant-cards {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 14px;
+  }
+  .plant-heading {
+    margin-top: 40px;
+  }
+  .plant-descri {
+    padding: 18px;
   }
 }
