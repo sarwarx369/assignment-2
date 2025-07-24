@@ -119,6 +119,29 @@ body {
   border: none;
   height: 35px;
 }
+
+/* lover sec */
+.lovers-section {
+  display: flex;
+  max-width: 925px;
+  margin: 60px auto;
+  margin-top: 135px;
+  gap: 58px;
+}
+.lover-h {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 25px 1px;
+  margin-top: 35px;
+}
+.lover-li {
+  font-size: 1.3rem;
+  margin: 15px 1px;
+}
+ul {
+  padding-left: 14px;
+}
+
 /* Responsive part */
 @media screen and (max-width: 576px) {
   .nav-links a {
@@ -175,5 +198,19 @@ body {
   }
   .plant-descri {
     padding: 18px;
+  }
+  /* lover section */
+  .lovers-section {
+    flex-direction: column;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    gap: 15px;
+    padding: 15px;
+  }
+  .lover-h {
+    margin-top: 0px;
+  }
+  .lover-image img {
+    width: 100%;
   }
 }
