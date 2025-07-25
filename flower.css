@@ -126,13 +126,14 @@ body {
   max-width: 925px;
   margin: 60px auto;
   margin-top: 135px;
-  gap: 58px;
+  gap: 50px;
+  position: relative;
 }
 .lover-h {
   font-size: 2.5rem;
   font-weight: bold;
   margin: 25px 1px;
-  margin-top: 35px;
+  margin-top: 50px;
 }
 .lover-li {
   font-size: 1.3rem;
@@ -141,16 +142,27 @@ body {
 ul {
   padding-left: 14px;
 }
+.badge-img {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 0px;
+}
+#badge {
+  position: absolute;
+  transform: translateX(-159px) translateY(-64px);
+  animation: spin 4s linear infinite;
+}
 
 /* deals  */
 .deals-h {
   font-size: 3rem;
   font-weight: bold;
-  margin: 15px;
+  margin: 25px;
 }
 .deals-p {
   font-size: 1.1rem;
   margin-bottom: 40px;
+  margin-top: 17px;
 }
 .deals-sp {
   color: #e95a08;
@@ -158,7 +170,6 @@ ul {
 .deals-cards {
   display: flex;
   max-width: 950px;
-  border: 2px solid black;
   margin: 10px auto;
   gap: 10px;
 }
@@ -167,7 +178,6 @@ ul {
   background-repeat: no-repeat;
   max-width: 100%;
   height: 177px;
-  border: 2px solid red;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -186,17 +196,34 @@ ul {
 .deals-cards > div:last-child {
   flex: 2;
 }
-.deal-card a {
+.deal-card a,
+.deal-card-u a {
   color: white;
   font-size: 1.2rem;
   font-weight: bolder;
+}
+.deal-card-u {
+  background-image: url("assets/deal-ana.png");
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 177px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  border-radius: 10px;
+  gap: 5px;
+  margin-bottom: 15px;
 }
 .deal-card2 {
   background-image: url("assets/deal-zabo.png");
   background-repeat: no-repeat;
   width: 100%;
   height: 370px;
-  border: 2px solid red;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -348,6 +375,9 @@ ul {
   }
   .lover-image img {
     width: 100%;
+  }
+  #badge {
+    display: none;
   }
   /* deals sec */
   .deals-cards {
