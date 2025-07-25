@@ -142,6 +142,107 @@ ul {
   padding-left: 14px;
 }
 
+/* deals  */
+.deals-h {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 15px;
+}
+.deals-p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+.deals-sp {
+  color: #e95a08;
+}
+.deals-cards {
+  display: flex;
+  max-width: 950px;
+  border: 2px solid black;
+  margin: 10px auto;
+  gap: 10px;
+}
+.deal-card {
+  background-image: url("assets/deal-bloom.png");
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 177px;
+  border: 2px solid red;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  border-radius: 10px;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+.deals-cards > div:first-child {
+  flex: 1;
+}
+.deals-cards > div:last-child {
+  flex: 2;
+}
+.deal-card a {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+.deal-card2 {
+  background-image: url("assets/deal-zabo.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 370px;
+  border: 2px solid red;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  border-radius: 10px;
+  gap: 5px;
+}
+.deal-card2 a {
+  color: white;
+}
+/* join section */
+.join {
+  width: 100%;
+  height: 533px;
+  background-image: url(assets/news-letter-bg.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  gap: 15px;
+  margin: 50px 0;
+}
+.join-t {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+.join-input {
+  width: 500px;
+  height: 35px;
+}
+.join-btn {
+  height: 35px;
+  width: 120px;
+  background-color: #e95a08;
+  color: white;
+  border: none;
+}
+.join-controls {
+  display: flex;
+}
 /* Responsive part */
 @media screen and (max-width: 576px) {
   .nav-links a {
@@ -212,5 +313,43 @@ ul {
   }
   .lover-image img {
     width: 100%;
+  }
+  /* deals sec */
+  .deals-cards {
+    flex-direction: column;
+    padding: 15px;
+  }
+  .deals-h {
+    margin-top: 55px;
+    margin-bottom: 5px;
+  }
+  .deals-p {
+    margin-bottom: 28px;
+    margin-top: 6px;
+    padding: 27px;
+    padding-top: 10px;
+  }
+  .deal-card2 {
+    width: 100%;
+    height: 210px;
+    background-size: cover;
+  }
+  /* join section */
+  .join {
+    width: 100%;
+    height: 270px;
+    background-size: cover;
+    padding: 11px;
+  }
+  .join-t {
+    font-size: 2rem;
+  }
+  .join-input {
+    width: 281px;
+    height: 33px;
+  }
+  .join-btn {
+    height: 33px;
+    width: 80px;
   }
 }
