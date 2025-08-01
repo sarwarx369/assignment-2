@@ -410,15 +410,15 @@ ul {
     padding: 11px;
   }
   .join-t {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .join-input {
-    width: 251px;
+    width: 241px;
     height: 26px;
   }
   .join-btn {
     height: 26px;
-    width: 67px;
+    width: 63px;
   }
   /* footer */
   .footer {
